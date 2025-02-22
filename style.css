@@ -173,9 +173,25 @@ input[type="text"] {                                           /* Styling für d
     }
 
     .buttons {
-        width: 80%;                                             /* Buttons breiter für bessere Bedienbarkeit */
-        font-size: 14px;
-        padding: 12px;
+        width: 70%;                                             /* Buttons breiter für bessere Bedienbarkeit */
+        max-width: 350px;
+        text-decoration: none;
+        color: inherit;
+        margin: 10px 0;
+    }
+
+    .buttons button {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        font-size: 16px;
+        padding: 14px;
+        text-align: center;
+        border: 2px solid #A0A0A0;
+        background-color: #A0A0A0;
+        color: #8B0000;
+        border-radius: 5px;
+        transition: all 0.3s ease;
     }
 
     button {
