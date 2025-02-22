@@ -173,26 +173,29 @@ input[type="text"] {                                           /* Styling für d
     }
 
     .buttons {
-        width: 70%;                                             /* Buttons breiter für bessere Bedienbarkeit */
-        max-width: 350px;
-        text-decoration: none;
-        color: inherit;
-        margin: 10px 0;
-    }
-
-    .buttons button {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100%;
-        font-size: 16px;
-        padding: 14px;
+        width: 70%;               /* Einheitliche Breite */
+        max-width: 350px;         /* Maximalbreite für große Displays */
+        text-decoration: none;    /* Entfernt blaues Unterstreichen */
+        color: inherit;           /* Stellt sicher, dass die Textfarbe korrekt ist */
+        margin: 10px 0;           /* Abstand zwischen Buttons */
+    }
+
+    .buttons button {
+        width: 100%;              /* Nimmt die volle Breite des <a>-Elements */
+        font-size: 14px;          /* Behält kleine Schriftgröße bei */
+        padding: 12px;
         text-align: center;
         border: 2px solid #A0A0A0;
         background-color: #A0A0A0;
         color: #8B0000;
         border-radius: 5px;
         transition: all 0.3s ease;
+        white-space: nowrap;       /* Verhindert Zeilenumbruch */
+        overflow: hidden;          /* Falls Text zu lang ist, wird er nicht umgebrochen */
+        text-overflow: ellipsis;   /* Optional: Falls Text zu lang, wird "..." angezeigt */
     }
 
     button {
