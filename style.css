@@ -56,7 +56,7 @@ body {
     transition: all 0.3s ease;                                  /* Sanfte Animation für Farbwechsel von Hover */
     align-items: center;
     font-family: Baskerville Old Face;
-    margin: 10px 0;                                             /*Abstand zwischen Antwortmöglichkeiten*/
+    margin: 10px auto;                                             /*Abstand zwischen Antwortmöglichkeiten*/
     width: 200px;                                               /*Einheitliche Breite für Antworten*/
 }
 
@@ -79,7 +79,7 @@ button {
     font-size: 16px;
     border-radius: 5px;                                         /* Abgerundete Ecken */
     transition: all 0.3s ease;                                  /* Sanfte Animation für Farbwechsel von Hover */
-    align-items: center;
+    /* align-items: center;*/
     margin-top: 10px;
 }
 
@@ -129,6 +129,9 @@ input[type="text"] {                                           /* Styling für d
     flex-direction: column;
     align-items: center;
     margin-top: 50px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 #antworten {
@@ -203,7 +206,7 @@ input[type="text"] {                                           /* Styling für d
     }
 
     body {
-        background-attachment: scroll;                          /* Fixes abgeschnittenes Hintergrundbild */
-        background-size: contain;
+        background-attachment: fixed;                          /* Fixes abgeschnittenes Hintergrundbild */
+        background-size: cover;
     }
 }
