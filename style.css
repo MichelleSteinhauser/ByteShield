@@ -154,9 +154,10 @@ input[type="text"] {                                           /* Styling für d
 
 
 @media (max-width: 768px) {
-    h1 {
+    h1, .buttons, button, input[type="text"] {
         font-size: 40px;                                        /* Kleinere Schrift für bessere Lesbarkeit */
         text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+        font-family: 'Baskerville Old Face', serif;
     }
 
     p {
