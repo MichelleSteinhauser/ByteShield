@@ -188,14 +188,13 @@ input[type="text"] {                                           /* Styling für d
         transition: all 0.3s ease;
         margin: 10px 0;        /* Abstand zwischen Buttons */
         white-space: nowrap;    /* Verhindert Zeilenumbruch */
-        opacity: 0.8;
+        text-decoration: none;
     }
 
     button {
         width: 80%;                                             /* Auch normale Buttons breiter */
         font-size: 14px;
         padding: 12px;
-        opacity: 0.8;
     }
 
     .quiz-container {
