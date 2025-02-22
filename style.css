@@ -84,7 +84,7 @@ button {
 }
 
 button:hover {                                                  /* Farbe ändert sich beim Hovern */
-    opacity: 0.5;
+    opacity: 0.6;
     color: white;
 }
 
