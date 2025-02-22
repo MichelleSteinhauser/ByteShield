@@ -27,6 +27,8 @@ function checkURL() {                                                //Funktion,
 
 function checkPassword() {
     const password = document.getElementById('password').value;
+    document.getElementById('password-result').innerText = "Eingegebenes Passwort: " + password;
+
     const result = document.getElementById('password-result');
 
     //Sicherheitskriterien als regulärer Ausdruck (Regex)
@@ -34,7 +36,8 @@ function checkPassword() {
     const upperCaseCheck = /[A-Z]/.test(password);
     const lowerCaseCheck = /[a-z]/.test(password);
     const numberCheck = /[0-9]/.test(password);
-    const specialCharCheck = /[!@#$%&^*(),.?:{}|<>+;]/.test(password);
+    const specialCharCheck = /[!@#$%&^*(),.?:{}|<>\[\]+;-]/.test(password);
+
 
 
     let errorMessage = '';
