@@ -154,7 +154,7 @@ input[type="text"] {                                           /* Styling für d
 
 
 @media (max-width: 768px) {
-    h1, .buttons, button, input[type="text"] {
+    h1, button, input[type="text"] {
         font-size: 40px;                                        /* Kleinere Schrift für bessere Lesbarkeit */
         text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
         font-family: 'Baskerville Old Face', serif;
@@ -173,7 +173,7 @@ input[type="text"] {                                           /* Styling für d
     }
 
     .buttons {
-         display: flex;          /* Flexbox für Inhalt */
+        display: flex;          /* Flexbox für Inhalt */
         justify-content: center; /* Text innerhalb des Buttons zentrieren */
         align-items: center;    /* Vertikal zentrieren */
         width: 70%;            /* 70% der Bildschirmbreite */
@@ -188,12 +188,14 @@ input[type="text"] {                                           /* Styling für d
         transition: all 0.3s ease;
         margin: 10px 0;        /* Abstand zwischen Buttons */
         white-space: nowrap;    /* Verhindert Zeilenumbruch */
+        opacity: 0.8;
     }
 
     button {
         width: 80%;                                             /* Auch normale Buttons breiter */
         font-size: 14px;
         padding: 12px;
+        opacity: 0.8;
     }
 
     .quiz-container {
