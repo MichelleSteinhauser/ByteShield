@@ -165,8 +165,11 @@ input[type="text"] {                                           /* Styling für d
     }
 
     .buttonscontainer {
-        text-decoration: none;
+        display: flex;
+        flex-direction: column; /* Buttons untereinander */
+        align-items: center; /* Zentriert die Buttons */
         width: 100%;
+        margin-top: 30px;
     }
 
     .buttons {
@@ -179,9 +182,12 @@ input[type="text"] {                                           /* Styling für d
         text-align: center;
         border: 2px solid #A0A0A0;
         background-color: #A0A0A0;
-        color: #8B0000 !important; /* Stellt sicher, dass kein Blau erscheint */
+        color: #8B0000 /* Stellt sicher, dass kein Blau erscheint */
         border-radius: 5px;
         transition: all 0.3s ease;
+        margin: 10px 0;
+        text-decoration: none;
+        white-space: nowrap;
      }
 
 
