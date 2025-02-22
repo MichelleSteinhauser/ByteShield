@@ -166,8 +166,7 @@ input[type="text"] {                                           /* Styling für d
 
     .buttonscontainer {
         text-decoration: none;
-        width: 70%;
-        max-width: 350px;
+        width: 100%;
     }
 
     .buttons {
@@ -183,9 +182,6 @@ input[type="text"] {                                           /* Styling für d
         color: #8B0000 !important; /* Stellt sicher, dass kein Blau erscheint */
         border-radius: 5px;
         transition: all 0.3s ease;
-        white-space: nowrap;       /* Kein Zeilenumbruch */
-        overflow: hidden;          /* Falls Text zu lang ist, wird er abgeschnitten */
-        text-overflow: ellipsis;   /* Optional: Falls zu lang, zeigt „...“ */
      }
 
 
