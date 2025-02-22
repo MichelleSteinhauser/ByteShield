@@ -165,28 +165,29 @@ input[type="text"] {                                           /* Styling für d
     }
 
     .buttonscontainer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
+        display: flex;          /* Flexbox für Zentrierung */
+        flex-direction: column; /* Buttons untereinander */
+        align-items: center;    /* Horizontal zentrieren */
+        width: 100%;            /* Volle Breite des Containers */
         margin-top: 30px;
     }
 
     .buttons {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 250px;                                             /* Buttons breiter für bessere Bedienbarkeit */
-        font-size: 14px;
-        padding: 12px;
-        text-align: center;
-        white-space: nowrap;
-    }
-
-    .buttons:hover {
-        opacity: 0.5;
-        color: white;
+         display: flex;          /* Flexbox für Inhalt */
+        justify-content: center; /* Text innerhalb des Buttons zentrieren */
+        align-items: center;    /* Vertikal zentrieren */
+        width: 70%;            /* 70% der Bildschirmbreite */
+        max-width: 350px;      /* Optional: Maximalbreite für große Displays */
+        font-size: 16px;       /* Einheitliche Schriftgröße */
+        padding: 14px;         /* Größerer Abstand für bessere Klickbarkeit */
+        text-align: center;    /* Falls notwendig */
+        border: 2px solid #A0A0A0;
+        background-color: #A0A0A0;
+        color: #8B0000;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+        margin: 10px 0;        /* Abstand zwischen Buttons */
+        white-space: nowrap;    /* Verhindert Zeilenumbruch */
     }
 
     button {
