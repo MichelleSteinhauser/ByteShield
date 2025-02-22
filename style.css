@@ -165,11 +165,9 @@ input[type="text"] {                                           /* Styling für d
     }
 
     .buttonscontainer {
-        display: flex;          /* Flexbox für Zentrierung */
-        flex-direction: column; /* Buttons untereinander */
-        align-items: center;    /* Horizontal zentrieren */
-        width: 100%;            /* Volle Breite des Containers */
-        margin-top: 30px;
+        text-decoration: none;
+        width: 70%;
+        max-width: 350px;
     }
 
     .buttons {
@@ -177,26 +175,20 @@ input[type="text"] {                                           /* Styling für d
         justify-content: center;
         align-items: center;
         width: 70%;               /* Einheitliche Breite */
-        max-width: 350px;         /* Maximalbreite für große Displays */
-        text-decoration: none;    /* Entfernt blaues Unterstreichen */
-        color: inherit;           /* Stellt sicher, dass die Textfarbe korrekt ist */
-        margin: 10px 0;           /* Abstand zwischen Buttons */
-    }
-
-    .buttons button {
-        width: 100%;              /* Nimmt die volle Breite des <a>-Elements */
-        font-size: 14px;          /* Behält kleine Schriftgröße bei */
+        font-size: 14px;
         padding: 12px;
         text-align: center;
         border: 2px solid #A0A0A0;
         background-color: #A0A0A0;
-        color: #8B0000;
+        color: #8B0000 !important; /* Stellt sicher, dass kein Blau erscheint */
         border-radius: 5px;
         transition: all 0.3s ease;
-        white-space: nowrap;       /* Verhindert Zeilenumbruch */
-        overflow: hidden;          /* Falls Text zu lang ist, wird er nicht umgebrochen */
-        text-overflow: ellipsis;   /* Optional: Falls Text zu lang, wird "..." angezeigt */
-    }
+        white-space: nowrap;       /* Kein Zeilenumbruch */
+        overflow: hidden;          /* Falls Text zu lang ist, wird er abgeschnitten */
+        text-overflow: ellipsis;   /* Optional: Falls zu lang, zeigt „...“ */
+     }
+
+
 
     button {
         width: 80%;                                             /* Auch normale Buttons breiter */
