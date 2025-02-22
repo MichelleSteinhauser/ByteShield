@@ -183,6 +183,7 @@ input[type="text"] {                                           /* Styling für d
     .buttons button {
         display: flex;
         justify-content: center;
+        align-items: center;
         width: 100%;
         font-size: 16px;
         padding: 14px;
@@ -216,7 +217,7 @@ input[type="text"] {                                           /* Styling für d
     }
 
     input[type="text"] {
-        width: 80%;                                             /* Eingabefelder breiter */
+        width: 70%;                                             /* Eingabefelder breiter */
         max-width: 250px;
         font-size: 14px;
     }
