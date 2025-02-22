@@ -158,7 +158,6 @@ input[type="text"] {                                           /* Styling für d
         font-size: 40px;                                        /* Kleinere Schrift für bessere Lesbarkeit */
         text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
         font-family: 'Baskerville Old Face', serif;
-        align-items: center;
     }
 
     p {
@@ -166,13 +165,28 @@ input[type="text"] {                                           /* Styling für d
     }
 
     .buttonscontainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
         margin-top: 30px;
     }
 
     .buttons {
-        width: 80%;                                             /* Buttons breiter für bessere Bedienbarkeit */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 250px;                                             /* Buttons breiter für bessere Bedienbarkeit */
         font-size: 14px;
         padding: 12px;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .buttons:hover {
+        opacity: 0.5;
+        color: white;
     }
 
     button {
