@@ -165,10 +165,11 @@ input[type="text"] {                                           /* Styling für d
     }
 
     .buttons {
-        width: 70%; /* Buttons sind 70% der Bildschirmbreite */
-        max-width: 300px; /* Optional: Maximale Breite */
-        font-size: 14px; /* Etwas kleinere Schrift für bessere Lesbarkeit */
-        padding: 12px; /* Etwas mehr Padding für bessere Bedienbarkeit */
+        width: 70vw; /* Buttons nehmen 70% der Bildschirmbreite ein */
+        max-width: 300px; /* Maximale Breite für größere Mobilgeräte */
+        height: auto; /* Automatische Höhe für bessere Anpassung */
+        font-size: 14px; /* Etwas kleinere Schrift */
+        padding: 14px; /* Mehr Padding für bessere Klickbarkeit */
     }
 
 
