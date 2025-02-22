@@ -9,6 +9,12 @@ function checkURL() {                                                //Funktion,
     //Überprüfen, ob die URL eine unsichere Domain enthält
     const isUnsafe = unsafeDomains.some(domain => url.includes(domain));
 
+    if (!url) {
+        result.innerHTML = 'Bitte gib eine URL ein';
+        result.style.color = 'orange';
+        return;
+    }
+
     if(isUnsafe) {
         result.innerText = 'Achtung: Diese URL könnte gefährlich sein!';
         result.style.color = 'red';
