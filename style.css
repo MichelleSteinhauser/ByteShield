@@ -1,0 +1,209 @@
+h1 {
+    font-size: 70px;
+    font-family: Baskerville Old Face;
+    text-align: center;
+    color: #A0A0A0;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+
+p {
+    color: white;
+    text-align: center;
+    font-family: Baskerville Old Face;
+}
+
+
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;                                                   /* Stellt sicher, dass body den gesamten Viewport einnimmt */
+    position: relative;
+}
+
+body {
+    background: url('Hintergrund/Hintergrund.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+
+
+
+/* Für Buttons auf Startseite*/
+.buttonscontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.buttonscontainer a {
+    margin: 10px 0;
+}
+
+.buttons {
+    background-color: #A0A0A0;
+    color: #8B0000;
+    font-family: Baskerville Old Face;
+    padding: 10px 20px;                                         /* Abstand innerhalb des Elements*/
+    border: 2px solid #A0A0A0;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;                                         /* Abgerundete Ecken */
+    transition: all 0.3s ease;                                  /* Sanfte Animation für Farbwechsel von Hover */
+    align-items: center;
+    font-family: Baskerville Old Face;
+    margin: 10px 0;                                             /*Abstand zwischen Antwortmöglichkeiten*/
+    width: 200px;                                               /*Einheitliche Breite für Antworten*/
+}
+
+.buttons:hover {                                                /* Farbe ändert sich beim Hovern */
+    opacity: 0.5;
+    color: white;
+}
+
+
+
+
+/*Button auf Checker-Seiten */
+button {
+    background-color: #A0A0A0;
+    color: #8B0000;
+    font-family: Baskerville Old Face;
+    padding: 10px 20px;                                         /* Abstand innerhalb des Elements*/
+    border: 2px solid #A0A0A0;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;                                         /* Abgerundete Ecken */
+    transition: all 0.3s ease;                                  /* Sanfte Animation für Farbwechsel von Hover */
+    align-items: center;
+    margin-top: 10px;
+}
+
+button:hover {                                                  /* Farbe ändert sich beim Hovern */
+    opacity: 0.5;
+    color: white;
+}
+
+
+
+
+/* Für Texteingabefelder Phishing, Passwort, E-Mail*/
+input[type="text"] {                                           /* Styling für das Eingabefeld */
+    width: 50%;
+    max-width: 300px;
+    padding: 10px;                                             /* Oberer und unterer Abstand von anderen Elementen */
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+    background-color: #333;
+    text-align: center;
+    font-family: Baskerville Old Face;
+}
+
+#url-result, #e-mail-result {                                  /* Styling für das Ergebnis */
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+.quiz-container {
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#antworten {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#antworten button {
+    margin: 10px 0;                                             /*Abstand zwischen Antwortmöglichkeiten*/
+    width: 200px;                                               /*Einheitliche Breite für Antworten*/
+}
+
+#next-btn {
+    background-color: #8B0000;
+    color: white;
+    opacity: 0.8;
+}
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 40px;                                        /* Kleinere Schrift für bessere Lesbarkeit */
+        text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .buttonscontainer {
+        margin-top: 30px;
+    }
+
+    .buttons {
+        width: 80%;                                             /* Buttons breiter für bessere Bedienbarkeit */
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    button {
+        width: 80%;                                             /* Auch normale Buttons breiter */
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .quiz-container {
+        width: 90%;
+        margin-top: 30px;
+    }
+
+    #antworten {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    #antworten button {
+        width: 90%;                                             /* Antwortmöglichkeiten nehmen mehr Platz ein */
+        font-size: 14px;
+    }
+
+    input[type="text"] {
+        width: 80%;                                             /* Eingabefelder breiter */
+        max-width: 250px;
+        font-size: 14px;
+    }
+
+    #next-btn {
+        width: 80%;
+        font-size: 14px;
+    }
+
+    body {
+        background-attachment: scroll;                          /* Fixes abgeschnittenes Hintergrundbild */
+        background-size: contain;
+    }
+}

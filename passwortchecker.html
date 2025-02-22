@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passwort-Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<h1>Passwort-Prüfer</h1>
+<p>Überprüfe, ob sein Passwort sicher genug ist.</p>
+
+<div class="input-container">
+    <input type="text" id="password" placeholder="Gib ein Passwort ein" /><label for="password"> </label>
+    <!-- Eingabefeld für die URL -->
+    <button onclick="checkPassword()">Prüfe Passwort</button>               <!-- Button zum Starten der Prüfung -->
+</div>
+
+<p id="password-result"></p>                                                <!-- Anzeige der Ergebnisnachricht -->
+
+
+<script src="script.js"></script>                                       <!-- Verknüpft JavaScript -->
+</body>
+</html>
