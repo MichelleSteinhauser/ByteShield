@@ -173,35 +173,15 @@ input[type="text"] {                                           /* Styling für d
     }
 
     .buttons {
-        display: flex;          /* Flexbox für Inhalt */
-        justify-content: center; /* Text innerhalb des Buttons zentrieren */
-        align-items: center;    /* Vertikal zentrieren */
-        width: 70%;            /* 70% der Bildschirmbreite */
-        max-width: 350px;      /* Optional: Maximalbreite für große Displays */
-        font-size: 16px;       /* Einheitliche Schriftgröße */
-        padding: 14px;         /* Größerer Abstand für bessere Klickbarkeit */
-        text-align: center;    /* Falls notwendig */
-        border: 2px solid #A0A0A0;
-        background-color: #A0A0A0;
-        color: #8B0000;
-        border-radius: 5px;
-        transition: all 0.3s ease;
-        margin: 10px 0;        /* Abstand zwischen Buttons */
-        white-space: nowrap;    /* Verhindert Zeilenumbruch */
-        text-decoration: none;
-    }
-
-    a.buttons {
-        text-decoration: none;
-        color: #8B0000;
-        display: flex;
+        width: 80%;                                             /* Buttons breiter für bessere Bedienbarkeit */
+        font-size: 14px;
+        padding: 12px;
     }
 
     button {
-        width: 70%;                                             /* Auch normale Buttons breiter */
+        width: 80%;                                             /* Auch normale Buttons breiter */
         font-size: 14px;
         padding: 12px;
-        max-width: 350px;
     }
 
     .quiz-container {
